@@ -12,7 +12,7 @@ pipeline{
    touch npl.txt
   }
   }
-  stage("Sample") {
+  stage("Plane") {
   steps{
     touch ucl.txt
   }
