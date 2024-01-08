@@ -7,14 +7,14 @@ pipeline{
 
 
   stages{
-  stage("Sample"){
+  stage("Build the source code"){
   steps{
-   echo "Hello World"
+   sh 'mvn clean deploy -Dmaven.test.skip=true'
   }
   }
   stage("Plane") {
   steps{
-    echo "Jenkins"
+    sh 'touch npl.txt'
   }
   }
   }
