@@ -12,9 +12,9 @@ pipeline{
    sh 'mvn clean install -Dmaven.test.skip=true'
   }
   }
-  stage("Plane") {
+  stage("Unit test") {
   steps{
-    sh 'touch npl.txt'
+    sh 'mvn surefire-report:report'
   }
   }
   }
