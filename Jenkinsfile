@@ -9,12 +9,12 @@ pipeline{
   stages{
   stage("Sample"){
   steps{
-   touch npl.txt
+   echo "Hello World"
   }
   }
   stage("Plane") {
   steps{
-    touch ucl.txt
+    echo "Jenkins"
   }
   }
   }
