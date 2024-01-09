@@ -26,7 +26,7 @@ pipeline{
           def uploadSpec = """{
             "files": [
               {
-                "pattern": "target/vprofile-v2.war",
+                "pattern": "target/*.war",
                 "target": "harshad-maven-libs-release-local/{1}",
                 "flat": "false",
                 "props" : "${properties}",
