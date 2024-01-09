@@ -27,7 +27,7 @@ pipeline{
             "files": [
               {
                 "pattern": "target/vprofile-v2.war",
-                "target": "harshad-maven-libs-snapshot-local/{1}",
+                "target": "harshad-maven-libs-release-local/{1}",
                 "flat": "false",
                 "props" : "${properties}",
                 
