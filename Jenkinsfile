@@ -31,6 +31,9 @@ pipeline{
                 "flat": "false",
                 "props" : "${properties}",
                 
+                            }
+                         ]
+                     }"""
           def buildInfo = server.upload(uploadSpec)
           buildInfo.env.collect()
           server.publishBuildInfo(buildInfo)
