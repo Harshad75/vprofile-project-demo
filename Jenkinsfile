@@ -30,7 +30,7 @@ pipeline{
                 "target": "harshad-maven-libs-release-local/{1}",
                 "flat": "false",
                 "props" : "${properties}",
-                "exclusions" : ["*.xml","*.properties","*.gif","*.jpg","*.png"]
+                "exclusions" : ["*.xml","*.properties","*.gif","*.jpg","*.png","*.css"]
                             }
                          ]
                      }"""
