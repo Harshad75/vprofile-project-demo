@@ -26,14 +26,11 @@ pipeline{
           def uploadSpec = """{
             "files": [
               {
-                "pattern": "target/(*)",
-                "target": "harshad-maven-libs-release-local/{1}",
+                "pattern": "target/vprofile-v2.war",
+                "target": "harshad-maven-libs-snapshot-local/{1}",
                 "flat": "false",
                 "props" : "${properties}",
-                "exclusions": [ "*.exec"]
-                            }
-                         ]
-                     }"""
+                
           def buildInfo = server.upload(uploadSpec)
           buildInfo.env.collect()
           server.publishBuildInfo(buildInfo)
