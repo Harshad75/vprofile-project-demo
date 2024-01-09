@@ -26,11 +26,11 @@ pipeline{
           def uploadSpec = """{
             "files": [
               {
-                "pattern": "target/(*)",
-                "target": "/{1}",
+                "pattern": "target/(vprofile-v2.war)",
+                "target": "harshad-maven-libs-release-local/{1}",
                 "flat": "false",
                 "props" : "${properties}",
-                "exclusions": [ "*.png","*.jpg","*.xml","*.properties","*.gif","*.sql"]
+                
                             }
                          ]
                      }"""
