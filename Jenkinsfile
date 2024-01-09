@@ -26,11 +26,11 @@ pipeline{
           def uploadSpec = """{
             "files": [
               {
-                "pattern": "target/(vprofile-v2.war)",
+                "pattern": "target/(*)",
                 "target": "/{1}",
                 "flat": "false",
                 "props" : "${properties}",
-                
+                "exclusions": [ "*.png","*.jpg","*.xml","*.properties","*.gif","*.sql"]
                             }
                          ]
                      }"""
